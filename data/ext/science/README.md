@@ -70,9 +70,16 @@
 #### 个人简介（bio）
 
 * URI: http://cnschema.org/bio
-* domain: http://cnschema.org/Scholar
+* domain: http://cnschema.org/Person
 * range: http://cnschema.org/Text
 * 说明：学者的个人介绍。
+
+#### 个人主页（homepage）
+
+* URI: http://cnschema.org/homepage
+* domain: http://cnschema.org/Person
+* range: http://cnschema.org/URL
+* 说明：学者的个人主页地址。
 
 #### 孩子项目（childItem)
 

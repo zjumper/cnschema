@@ -134,7 +134,7 @@
         "@id": "http://cnschema.org/bio",
         "@type": "rdf:Property",
         "http://cnschema.org/domainIncludes": {
-          "@id": "http://science.cnschema.org/Scholar"
+          "@id": "http://science.cnschema.org/Person"
         },
         "http://schema.org/rangeIncludes": {
           "@id": "http://schema.org/Text"
@@ -144,8 +144,25 @@
         },
         "rdfs:comment": "The a scholar‘ biology.",
         "rdfs:label": "bio",
-        "http://cnschema.org/description": "The a scholar‘ biology.",
+        "http://cnschema.org/description": "The a scholar‘s biology.",
         "http://cnschema.org/descriptionZh": "学者的个人简介。"
+      },
+      {
+        "@id": "http://cnschema.org/homepage",
+        "@type": "rdf:Property",
+        "http://cnschema.org/domainIncludes": {
+          "@id": "http://science.cnschema.org/homepage"
+        },
+        "http://schema.org/rangeIncludes": {
+          "@id": "http://schema.org/URL"
+        },
+        "http://cnschema.org/isPartOf": {
+          "@id": "http://science.cnschema.org"
+        },
+        "rdfs:comment": "The a scholar‘ homepage url.",
+        "rdfs:label": "homepage",
+        "http://cnschema.org/description": "The a scholar‘s homepage.",
+        "http://cnschema.org/descriptionZh": "学者的个人主页地址。"
       },
       {
         "@id": "http://cnschema.org/hIndex",
