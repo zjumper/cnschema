@@ -150,9 +150,14 @@
       {
         "@id": "http://cnschema.org/homepage",
         "@type": "rdf:Property",
-        "http://cnschema.org/domainIncludes": {
-          "@id": "http://science.cnschema.org/homepage"
-        },
+        "http://cnschema.org/domainIncludes": [
+          {
+            "@id": "http://science.cnschema.org/Person"
+          },
+          {
+            "@id": "http://science.cnschema.org/Organization"
+          },
+        ],
         "http://schema.org/rangeIncludes": {
           "@id": "http://schema.org/URL"
         },
