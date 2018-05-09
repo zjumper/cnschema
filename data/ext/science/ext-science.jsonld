@@ -1,0 +1,202 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@id": "http://science.cnschema.org/#1.0",
+  "@graph": [
+      {
+        "@id": "http://cnschema.org/Scholar",
+        "@type": "rdfs:Class",
+        "http://cnschema.org/isPartOf": {
+          "@id": "http://science.cnschema.org"
+        },
+        "rdfs:comment": "A person who studies and researches in academic domain.",
+        "rdfs:label": "Scholar",
+        "rdfs:subClassOf": {
+          "@id": "http://cnschema.org/Person"
+        },
+        "http://cnschema.org/description": "A person who studies and researches in academic domain.",
+        "http://cnschema.org/descriptionZh": "在学术领域进行工作和研究的人。"
+      },
+      {
+        "@id": "http://cnschema.org/ScienceEvent",
+        "@type": "rdfs:Class",
+        "http://cnschema.org/isPartOf": {
+          "@id": "http://science.cnschema.org"
+        },
+        "rdfs:comment": "Science event",
+        "rdfs:label": "ScienceEvent",
+        "rdfs:subClassOf": {
+          "@id": "http://cnschema.org/Event"
+        },
+        "http://cnschema.org/description": "Science event",
+        "http://cnschema.org/descriptionZh": "科学活动。"
+      },
+      {
+        "@id": "http://cnschema.org/Instition",
+        "@type": "rdfs:Class",
+        "http://cnschema.org/isPartOf": {
+          "@id": "http://science.cnschema.org"
+        },
+        "rdfs:comment": "Instition",
+        "rdfs:label": "Institution",
+        "rdfs:subClassOf": {
+          "@id": "http://cnschema.org/Organization"
+        },
+        "http://cnschema.org/description": "Institution",
+        "http://cnschema.org/descriptionZh": "学院，研究机构"
+      },
+      {
+        "@id": "http://cnschema.org/AcademicConference",
+        "@type": "rdfs:Class",
+        "http://cnschema.org/isPartOf": {
+          "@id": "http://science.cnschema.org"
+        },
+        "rdfs:comment": "A conference is an academic event for reseachers and scholars to publish their papers and disscus some research problems.",
+        "rdfs:label": "AcademicConference",
+        "rdfs:subClassOf": {
+          "@id": "http://cnschema.org/ScienceEvent"
+        },
+        "http://cnschema.org/description": "A conference is an academic event for reseachers and scholars to publish their papers and disscus some research problems.",
+        "http://cnschema.org/descriptionZh": "科学研究人员和学者发表论文和集中讨论学术问题的学术活动。"
+      },
+      {
+        "@id": "http://cnschema.org/abbreviation",
+        "@type": "rdf:Property",
+        "http://cnschema.org/domainIncludes": {
+          "@id": "http://schema.org/Thing"
+        },
+        "http://schema.org/rangeIncludes": {
+          "@id": "http://schema.org/Text"
+        },
+        "http://cnschema.org/isPartOf": {
+          "@id": "http://science.cnschema.org"
+        },
+        "rdfs:comment": "Abbreviation of a thing‘s name.",
+        "rdfs:label": "hIndex",
+        "http://cnschema.org/description": "Abbreviation of a thing's name.",
+        "http://cnschema.org/descriptionZh": "事物名字的缩写。"
+      },
+      {
+        "@id": "http://cnschema.org/activity",
+        "@type": "rdf:Property",
+        "http://cnschema.org/domainIncludes": {
+          "@id": "http://science.cnschema.org/Scholar"
+        },
+        "http://schema.org/rangeIncludes": {
+          "@id": "http://schema.org/Number"
+        },
+        "http://cnschema.org/isPartOf": {
+          "@id": "http://science.cnschema.org"
+        },
+        "rdfs:comment": "The activity value of a scholar.",
+        "rdfs:label": "activity",
+        "http://cnschema.org/description": "The activity value of a scholar.",
+        "http://cnschema.org/descriptionZh": "学者的活跃度值"
+      },
+      {
+        "@id": "http://cnschema.org/pubNumber",
+        "@type": "rdf:Property",
+        "http://cnschema.org/domainIncludes": {
+          "@id": "http://science.cnschema.org/Scholar"
+        },
+        "http://schema.org/rangeIncludes": {
+          "@id": "http://schema.org/Number"
+        },
+        "http://cnschema.org/isPartOf": {
+          "@id": "http://science.cnschema.org"
+        },
+        "rdfs:comment": "The total publication number of a scholar.",
+        "rdfs:label": "pubNumber",
+        "http://cnschema.org/description": "The total publication number of a scholar.",
+        "http://cnschema.org/descriptionZh": "学者发表的文献总数。"
+      },
+      {
+        "@id": "http://cnschema.org/totalCitation",
+        "@type": "rdf:Property",
+        "http://cnschema.org/domainIncludes": {
+          "@id": "http://science.cnschema.org/Scholar"
+        },
+        "http://schema.org/rangeIncludes": {
+          "@id": "http://schema.org/Number"
+        },
+        "http://cnschema.org/isPartOf": {
+          "@id": "http://science.cnschema.org"
+        },
+        "rdfs:comment": "The total publication citation of a scholar.",
+        "rdfs:label": "totalCitation",
+        "http://cnschema.org/description": "The total publication citation number of a scholar.",
+        "http://cnschema.org/descriptionZh": "学者发表论文的引用总数。"
+      },
+      {
+        "@id": "http://cnschema.org/bio",
+        "@type": "rdf:Property",
+        "http://cnschema.org/domainIncludes": {
+          "@id": "http://science.cnschema.org/Scholar"
+        },
+        "http://schema.org/rangeIncludes": {
+          "@id": "http://schema.org/Text"
+        },
+        "http://cnschema.org/isPartOf": {
+          "@id": "http://science.cnschema.org"
+        },
+        "rdfs:comment": "The a scholar‘ biology.",
+        "rdfs:label": "bio",
+        "http://cnschema.org/description": "The a scholar‘ biology.",
+        "http://cnschema.org/descriptionZh": "学者的个人简介。"
+      },
+      {
+        "@id": "http://cnschema.org/hIndex",
+        "@type": "rdf:Property",
+        "http://cnschema.org/domainIncludes": {
+          "@id": "http://science.cnschema.org/Scholar"
+        },
+        "http://schema.org/rangeIncludes": {
+          "@id": "http://schema.org/Number"
+        },
+        "http://cnschema.org/isPartOf": {
+          "@id": "http://science.cnschema.org"
+        },
+        "rdfs:comment": "The H-Index value of a scholar.",
+        "rdfs:label": "hIndex",
+        "http://cnschema.org/description": "The H-Index value of a scholar.",
+        "http://cnschema.org/descriptionZh": "学者的H-Index值"
+      },
+      {
+        "@id": "http://cnschema.org/childItem",
+        "@type": "rdf:Property",
+        "http://cnschema.org/domainIncludes": {
+          "@id": "http://schema.org/Specialty"
+        },
+        "http://schema.org/rangeIncludes": {
+          "@id": "http://schema.org/Specialty"
+        },
+        "http://cnschema.org/isPartOf": {
+          "@id": "http://science.cnschema.org"
+        },
+        "rdfs:comment": "The child item of this node.",
+        "rdfs:label": "childItem",
+        "http://cnschema.org/description": "The child item of this node.",
+        "http://cnschema.org/descriptionZh": "孩子项目"
+      },
+      {
+        "@id": "http://cnschema.org/parentItem",
+        "@type": "rdf:Property",
+        "http://cnschema.org/domainIncludes": {
+          "@id": "http://schema.org/Specialty"
+        },
+        "http://schema.org/rangeIncludes": {
+          "@id": "http://schema.org/Specialty"
+        },
+        "http://cnschema.org/isPartOf": {
+          "@id": "http://science.cnschema.org"
+        },
+        "rdfs:comment": "The parent item of this node.",
+        "rdfs:label": "parentItem",
+        "http://cnschema.org/description": "The parent item of this node.",
+        "http://cnschema.org/descriptionZh": "父项目"
+      },
+  ]
+}
